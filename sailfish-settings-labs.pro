@@ -1,7 +1,8 @@
 TEMPLATE=subdirs
 
 SUBDIRS += \
-    plugin
+    plugin \
+    gestures
 
 plugin_entry.path = /usr/share/jolla-settings/entries
 plugin_entry.files = sailfish-settings-labs.json
