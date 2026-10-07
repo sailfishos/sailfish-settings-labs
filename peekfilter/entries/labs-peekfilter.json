@@ -1,0 +1,16 @@
+{
+    "translation_catalog": "settings-sailfish-labs",
+    "entries": [
+        {
+            "path": "system_settings/labs/peekfilter",
+            "title": "Swipe Edges",
+            "translation_id": "settings_display-he-peekfilter",
+            "type": "page",
+            "icon": "image://theme/icon-m-peekfilter",
+            "order": 300,
+            "params": {
+                "source": "/usr/share/sailfish-settings-labs/peekfilter/peekfilter.qml"
+            }
+        }
+    ]
+}

@@ -27,6 +27,7 @@ Summary:  Meta package to include all Settings Labs features
 BuildArch:  noarch
 Requires: %{name} = %{version}-%{release}
 Requires: %{name}-gestures
+Requires: %{name}-peekfilter
 
 %description all
 This package is here to include all Settings Labs
@@ -43,7 +44,7 @@ Requires: %{name} = %{version}
 %{summary}.
 
 %package peekfilter
-Summary: Labs Edge Swipe
+Summary: Edge Swipe Lab Components
 BuildArch:  noarch
 Requires: %{name} = %{version}
 
