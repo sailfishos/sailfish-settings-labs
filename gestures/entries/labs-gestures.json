@@ -1,0 +1,16 @@
+{
+    "translation_catalog": "settings-sailfish-labs",
+    "entries": [
+        {
+            "path": "system_settings/labs/gestures",
+            "title": "Gestures",
+            "translation_id": "settings_display-he-gestures",
+            "type": "page",
+            "icon": "image://theme/icon-m-gesture",
+            "order": 280,
+            "params": {
+                "source": "/usr/share/sailfish-settings-labs/gestures/gestures.qml"
+            }
+        }
+    ]
+}
