@@ -1,12 +1,12 @@
 TEMPLATE=subdirs
 
-#SUBDIRS += template
+SUBDIRS += \
+    plugin
 
-include(template/template.pri)
+plugin_entry.path = /usr/share/jolla-settings/entries
+plugin_entry.files = sailfish-settings-labs.json
 
-readme.files += README.md
-readme.path = /usr/share/$${TARGET}
-INSTALLS += readme
+INSTALLS += plugin_entry
 
 entries.files += entries
 entries.path = /usr/share/jolla-settings
