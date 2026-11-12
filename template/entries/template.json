@@ -1,0 +1,16 @@
+{
+    "translation_catalog": "settings-sailfish_labs",
+    "entries": [
+        {
+            "path": "system_settings/labs/template-app",
+            "title": "LabTemplate",
+            "translation_id": "labtemplate-entry_name",
+            "type": "page",
+            "icon": "image://theme/icon-m-labs",
+            "order": 200,
+            "params": {
+                "source": "/usr/share/sailfish-settings-labs/labtemplate/main.qml"
+            }
+        }
+    ]
+}

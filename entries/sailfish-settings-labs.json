@@ -1,0 +1,13 @@
+{
+    "translation_catalog": "settings-sailfish_labs",
+    "entries": [
+        {
+            "path": "system_settings/labs",
+            "title": "Labs",
+            "translation_id": "settings_system-labs",
+            "type": "section",
+            "order": 700
+        }
+    ]
+}
+
