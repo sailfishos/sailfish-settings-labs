@@ -1,6 +1,6 @@
 TEMPLATE=subdirs
 
-#SUBDIRS += template
+SUBDIRS += peekfilter
 
 include(template/template.pri)
 
