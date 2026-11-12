@@ -1,6 +1,7 @@
 TEMPLATE=subdirs
 
-#SUBDIRS += template
+SUBDIRS += \
+    gestures
 
 include(template/template.pri)
 
