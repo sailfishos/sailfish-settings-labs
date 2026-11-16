@@ -3,7 +3,7 @@ Name: sailfish-settings-labs
 Summary:    Settings Labs Project
 Version:    0.1.0
 Release:    0
-License:    BSD-3-Clause
+License:    BSD-3-Clause and ASL 2.0
 URL:        https://github.com/sailfishos/sailfish-settings-labs
 Source0:    %{name}-%{version}.tar.bz2
 
@@ -16,6 +16,14 @@ BuildRequires:  qml-rpm-macros
 %description
 %{summary}.
 
+%package gestures
+Summary: Gestures Lab Components
+BuildArch:  noarch
+Requires: %{name} = %{version}
+
+%description gestures
+%{summary}.
+
 %package ts-devel
 Summary: Translation source for Settings Labs Project
 
@@ -26,6 +34,7 @@ Translation source for Settings Labs Project
 Summary:  Meta package to include all Settings Labs features
 BuildArch:  noarch
 Requires: %{name} = %{version}-%{release}
+Requires: %{name}-gestures
 
 %description all
 This package is here to include all Settings Labs
@@ -52,6 +61,14 @@ features.
 
 %files ts-devel
 %{_datadir}/translations/source/*.ts
+
+%files gestures
+%{_datadir}/jolla-settings/entries/labs-gestures.json
+%dir %{_datadir}/%{name}/gestures/
+%dir %{_datadir}/%{name}/gestures/components
+%{_datadir}/%{name}/gestures/gestures.qml
+%{_datadir}/%{name}/gestures/components/quickapptoggle.qml
+
 
 %files all
 # Empty as this is meta package.
