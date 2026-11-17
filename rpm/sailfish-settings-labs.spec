@@ -16,14 +16,6 @@ BuildRequires:  qml-rpm-macros
 %description
 %{summary}.
 
-%package gestures
-Summary: Gestures Lab Components
-BuildArch:  noarch
-Requires: %{name} = %{version}
-
-%description gestures
-%{summary}.
-
 %package ts-devel
 Summary: Translation source for Settings Labs Project
 
@@ -39,6 +31,24 @@ Requires: %{name}-gestures
 %description all
 This package is here to include all Settings Labs
 features.
+
+# Add/remove subpackages below to ease merging
+
+%package gestures
+Summary: Gestures Lab Components
+BuildArch:  noarch
+Requires: %{name} = %{version}
+
+%description gestures
+%{summary}.
+
+%package peekfilter
+Summary: Labs Edge Swipe
+BuildArch:  noarch
+Requires: %{name} = %{version}
+
+%description peekfilter
+%{summary}.
 
 %prep
 %autosetup -p1 -n %{name}-%{version}
@@ -62,6 +72,9 @@ features.
 %files ts-devel
 %{_datadir}/translations/source/*.ts
 
+%files all
+# Empty as this is meta package.
+
 %files gestures
 %{_datadir}/jolla-settings/entries/labs-gestures.json
 %dir %{_datadir}/%{name}/gestures/
@@ -69,6 +82,10 @@ features.
 %{_datadir}/%{name}/gestures/gestures.qml
 %{_datadir}/%{name}/gestures/components/quickapptoggle.qml
 
+%files peekfilter
+%{_datadir}/jolla-settings/entries/labs-peekfilter.json
+%dir %{_datadir}/%{name}/peekfilter
+%{_datadir}/%{name}/peekfilter/peekfilter.qml
+%{_datadir}/%{name}/peekfilter/PeekSlider.qml
 
-%files all
-# Empty as this is meta package.
+# Add/remove subpackages below to ease merging
